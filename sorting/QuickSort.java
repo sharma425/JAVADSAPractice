@@ -1,8 +1,8 @@
 package sorting;
 
-// Online Java Compiler
-// Use this editor to write, compile and run your Java code online
 import java.util.Arrays;
+
+import util.ArrayUtil;
 
 public class QuickSort {
     public static void main(String[] args) {
@@ -34,16 +34,10 @@ public class QuickSort {
             }
 
             if (left < right)
-                swap(nums, left, right);
+                ArrayUtil.swapElement(left, right, nums);
         }
-        swap(nums, pivot, right);
+        ArrayUtil.swapElement(pivot, right, nums);
         return right;
-    }
-
-    private static void swap(int[] nums, int i, int j) {
-        int tmp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = tmp;
     }
 
 }
