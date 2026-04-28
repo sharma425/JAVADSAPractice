@@ -3,6 +3,7 @@ package arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+//https://takeuforward.org/plus/dsa/problems/longest-subarray-with-sum-k?source=strivers-a2z-dsa-track
 public class FindLongestSubArray {
     public static void main(String[] args) {
         int k = 3;

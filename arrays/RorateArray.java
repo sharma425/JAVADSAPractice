@@ -2,6 +2,7 @@ package arrays;
 
 import java.util.Arrays;
 
+//https://leetcode.com/problems/rotate-array/description/
 public class RorateArray {
     public static void main(String[] args) {
         int[] nums = { 1, 2, 3, 4, 5, 6, 7 };

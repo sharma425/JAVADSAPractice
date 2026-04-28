@@ -1,5 +1,6 @@
 package arrays;
 
+//https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/
 public class CheckSortedAndRotated {
     public static void main(String[] args) {
         int[] nums4 = { 1, 1, 2, 1 };

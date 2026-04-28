@@ -8,7 +8,12 @@ public class SortColorsDutchNationalFlag {
     public static void main(String[] args) {
         int[] nums = { 2, 0, 2, 1, 1, 0 };
         sortByDutchNationalFlagAlgo(nums);
+
         System.out.println(Arrays.toString(nums));
+        int[] nums1 = { 2, 0, 1 };
+        sortByDutchNationalFlagAlgo(nums1);
+
+        System.out.println(Arrays.toString(nums1));
     }
 
     public static void sortColors(int[] nums) {
@@ -42,15 +47,14 @@ public class SortColorsDutchNationalFlag {
         int mid = 0;
         int low = 0;
         int high = nums.length - 1;
-        while (mid < high) {
+        while (mid <= high) {
             if (nums[mid] == 0) {
                 ArrayUtil.swapElement(mid, low, nums);
                 low++;
                 mid++;
-            }
-            if (nums[mid] == 1)
+            } else if (nums[mid] == 1)
                 mid++;
-            if (nums[mid] == 2) {
+            else if (nums[mid] == 2) {
                 ArrayUtil.swapElement(mid, high, nums);
                 high--;
             }

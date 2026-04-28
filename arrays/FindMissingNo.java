@@ -1,5 +1,6 @@
 package arrays;
 
+//https://www.geeksforgeeks.org/dsa/find-the-missing-number/
 public class FindMissingNo {
     public static void main(String[] args) {
         int[] nums = { 0, 1, 2, 4, 5, 6 };
